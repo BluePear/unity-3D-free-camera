@@ -1,5 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -12,10 +10,11 @@ public class CameraController : MonoBehaviour {
     [SerializeField] private float draggingSpeed;
     [SerializeField] private float maxZoom;
     [SerializeField] private float minZoom;
-    
+
     private bool isDragging;
     private Vector3 lastMousePosition;
     private Vector3 currentMousePosition;
+
 
     private Camera cam;
 
