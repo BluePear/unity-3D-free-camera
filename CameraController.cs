@@ -3,13 +3,13 @@ using UnityEngine.EventSystems;
 
 public class CameraController : MonoBehaviour {
 
-    [SerializeField] private float panSpeed;
-    [SerializeField] private float zoomSpeed;
-    [SerializeField] private float rotateSpeedKeys;
-    [SerializeField] private float rotateSpeedMouse;
-    [SerializeField] private float draggingSpeed;
-    [SerializeField] private float maxZoom;
-    [SerializeField] private float minZoom;
+    [SerializeField] private float panSpeed = 1.0f;
+    [SerializeField] private float zoomSpeed = 100.0f;
+    [SerializeField] private float rotateSpeedKeys = 0.4f;
+    [SerializeField] private float rotateSpeedMouse = 4.0f;
+    [SerializeField] private float draggingSpeed = 0.2f;
+    [SerializeField] private float maxZoom = 25.0f;
+    [SerializeField] private float minZoom = 500.0f;
 
     private bool isDragging;
     private Vector3 lastMousePosition;
